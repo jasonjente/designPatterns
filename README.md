@@ -1,4 +1,4 @@
-# designPatterns
+# Design Patterns in Java
 Simple design patterns demos implementations in java. Covering some creational and some structural patterns. Behavioral coming soon.
 Many of these are a compiled version of running examples from the internet.
 

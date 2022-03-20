@@ -11,4 +11,4 @@ In every package there is a Demo java file which you can run.
 
 
 credits: https://www.journaldev.com/java/design-patterns,
-         https://www.javatpoint.com/design-patterns-in-java for some ideas around some of these implementations and 
+         https://www.javatpoint.com/design-patterns-in-java for some ideas around some of these implementations.

@@ -1,4 +1,4 @@
-package designPatterns.creational.abstractFactoryPattern.factoryCreator;
+package designPatterns.creational.abstractFactoryPattern;
 
 import designPatterns.creational.abstractFactoryPattern.factories.AbstractFactory;
 import designPatterns.creational.abstractFactoryPattern.loans.Loan;
@@ -8,7 +8,7 @@ import designPatterns.creational.abstractFactoryPattern.factories.LoanFactory;
 
 import java.io.*;
 
-public class FactoryCreator {
+public class FactoryDemo {
     public static AbstractFactory getFactory(String choice){
         if(choice.equalsIgnoreCase("Bank")){
             return new BankFactory();
@@ -17,7 +17,7 @@ public class FactoryCreator {
         }
         return null;
     }
-    public static void main(String args[])throws IOException {
+    public static void main(String[] args)throws IOException {
 
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
@@ -28,7 +28,7 @@ public class FactoryCreator {
         System.out.print("Enter the type of loan e.g. home loan or business loan or education loan : ");
 
         String loanName=br.readLine();
-        AbstractFactory bankFactory = FactoryCreator.getFactory("Bank");
+        AbstractFactory bankFactory = FactoryDemo.getFactory("Bank");
         Bank b=bankFactory.getBank(bankName);
 
         System.out.print("\n");
@@ -46,7 +46,7 @@ public class FactoryCreator {
         System.out.print("\n");
         System.out.println("you are taking the loan from "+ b.getBankName());
 
-        AbstractFactory loanFactory = FactoryCreator.getFactory("Loan");
+        AbstractFactory loanFactory = FactoryDemo.getFactory("Loan");
         Loan l=loanFactory.getLoan(loanName);
         l.getInterestRate(rate);
         l.calculateLoanPayment(loanAmount,years);

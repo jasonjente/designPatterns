@@ -7,7 +7,9 @@ Contents: Behavioral Patterns(Chain of Responsibility Pattern) , Creational Patt
 
 I have tried to make these examples in a simple way.
 Notes: 
-1)In order to run the Singleton with Postgres like I have configured, make sure you include the driver jar in the classpath!
+
+
+1) In order to run the Singleton with Postgres like I have configured, make sure you include the driver jar in the classpath!
 2) Most of these examples are meant to recreate small solutions to problems I created. These solutions could error-prone.
 
 3) In every package there is a Demo java file which you can run.

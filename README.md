@@ -1,6 +1,6 @@
 # Design Patterns in Java
 Simple design patterns demos implementations in java. Covering the basic Creational, Behavioral and Structural design patterns. 
-As a bonus I have created a DAO design pattern implementation as well as a local database and a logger. They are not   
+As a bonus I have created a DAO design pattern implementation as well as a local database and a logger.
 Many of these are a compiled version of running examples from the internet.
 
 Contents: Behavioral Patterns(Chain of Responsibility Pattern) , Creational Patterns (Abstract Factory Patterns, Object Pool Pattern, Prototype Pattern, Singleton Pattern),  Structural Patterns (Adapter Pattern, Composite Pattern) and misc(DAO Pattern)

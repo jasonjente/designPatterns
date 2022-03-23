@@ -12,25 +12,25 @@ public abstract class Logger {
         this.nextLevelLogger = nextLevelLogger;
     }
     public void log(int levels, String log){
-        if(this.levels<=levels){
+        if(this.levels==levels){
             logMessage(log);
+        }else{
+            if (nextLevelLogger!=null) {
+                nextLevelLogger.log(levels, log);
+            }
         }
-        if (nextLevelLogger!=null) {
-            nextLevelLogger.log(levels, log);
-        }
-    }
 
+    }
     /**
      *
      * @return a Logger, use Logger.INFO, DEBUG or ERROR to use the logger you want.
      */
     public static Logger createLogger(){
         Logger infoLogger = new InfoLogger(Logger.INFO);
-        Logger debugLogger = new DebugLogger(Logger.DEBUG);
         Logger errorLogger = new ErrorLogger(Logger.ERROR);
-        errorLogger.setNextLevelLogger(debugLogger);
         infoLogger.setNextLevelLogger(errorLogger);
-
+        Logger debugLogger = new DebugLogger(Logger.DEBUG);
+        errorLogger.setNextLevelLogger(debugLogger);
 
         return infoLogger;
     }

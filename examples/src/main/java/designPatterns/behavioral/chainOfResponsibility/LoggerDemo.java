@@ -6,9 +6,8 @@ import designPatterns.misc.daoPattern.EntityDAOImpl;
 import java.util.List;
 
 public class LoggerDemo {
-
+    private final static Logger logger = Logger.createLogger();
     public static void main(String[] args) {
-        Logger logger = Logger.createLogger();
         logger.log(Logger.INFO,"BEGIN initialized logger, instantiating EntityDao.");
 
         EntityDAOImpl entityDAO = new EntityDAOImpl();

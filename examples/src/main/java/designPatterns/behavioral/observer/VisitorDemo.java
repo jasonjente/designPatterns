@@ -1,4 +1,4 @@
-package designPatterns.behavioral.visitor;
+package designPatterns.behavioral.observer;
 
 public class VisitorDemo {
     public static void main(String[] args) {

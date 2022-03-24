@@ -1,4 +1,4 @@
-package designPatterns.behavioral.visitor;
+package designPatterns.behavioral.observer;
 
 import designPatterns.behavioral.chainOfResponsibility.Logger;
 

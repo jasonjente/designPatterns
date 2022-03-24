@@ -1,4 +1,4 @@
-package designPatterns.behavioral.visitor;
+package designPatterns.behavioral.observer;
 
 public interface Subject {
     void subscribeObserver(Observer observer);

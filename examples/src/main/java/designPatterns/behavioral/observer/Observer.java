@@ -1,4 +1,4 @@
-package designPatterns.behavioral.visitor;
+package designPatterns.behavioral.observer;
 
 public interface Observer {
     void update(String dec);

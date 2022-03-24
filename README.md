@@ -3,7 +3,7 @@ Simple design patterns demos implementations in java. Covering the basic Creatio
 As a bonus I have created a DAO design pattern implementation as well as a local database and a logger.
 Many of these are a compiled version of running examples from the internet.
 
-Contents: Behavioral Patterns(Chain of Responsibility Pattern) , Creational Patterns (Abstract Factory Patterns, Object Pool Pattern, Prototype Pattern, Singleton Pattern),  Structural Patterns (Adapter Pattern, Composite Pattern) and misc(DAO Pattern)
+Contents: Behavioral Patterns(Chain of Responsibility Pattern, Dependency Injection Pattern) , Creational Patterns (Abstract Factory Patterns, Object Pool Pattern, Prototype Pattern, Singleton Pattern),  Structural Patterns (Adapter Pattern, Composite Pattern) and misc(DAO Pattern)
 
 I have tried to make these examples in a simple way.
 Notes: 

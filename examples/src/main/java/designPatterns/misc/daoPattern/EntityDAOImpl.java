@@ -26,6 +26,6 @@ public class EntityDAOImpl implements EntityDAO{
 
     @Override
     public void deleteEntityById(long id) {
-        db.deleteEntry(id);
+        db.deleteEntryById(id);
     }
 }

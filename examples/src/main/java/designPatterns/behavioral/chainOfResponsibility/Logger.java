@@ -11,9 +11,14 @@ public abstract class Logger {
     public void setNextLevelLogger(Logger nextLevelLogger){
         this.nextLevelLogger = nextLevelLogger;
     }
-    public void log(int levels, String log){
+
+    public void log(int levels, Object log){
+        if((levels < INFO || levels > DEBUG) && levels != ERROR){
+            log(2, "Illegal argument, use INFO, ERROR or DEBUG.");
+            throw new IllegalArgumentException();
+        }
         if(this.levels==levels){
-            logMessage(log);
+            logMessage(log.toString());
         }else{
             if (nextLevelLogger!=null) {
                 nextLevelLogger.log(levels, log);

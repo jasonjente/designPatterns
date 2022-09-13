@@ -9,6 +9,6 @@ public class ErrorLogger extends Logger{
 
     @Override
     protected void logMessage(String log) {
-        System.out.println("LOGGER-ERROR: "+ LocalDateTime.now() + " : " + log);
+        System.out.println("LOGGER-Error: "+ LocalDateTime.now() + " : " + log);
     }
 }
